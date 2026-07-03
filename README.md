@@ -1,7 +1,7 @@
 # 💖 Bellabeat Fitness Tracker Analysis
 
-<p align="center">
-  <img src="assets/workflow.png" alt="Bellabeat Workflow" width="100%">
+**End-to-end analytics case study** — turning 33 users' worth of FitBit tracker data into product and marketing recommendations for Bellabeat, a high-tech wellness company for women.
+
 </p>
 
 <p align="center">
@@ -78,7 +78,7 @@ The primary business question is:
 # 🔄 Project Workflow
 
 <p align="center">
-<img src="assets/workflow.png" width="100%">
+<img src="05_presentation/workflow.png" width="70%">
 </p>
 
 The project followed this analytical workflow:
@@ -128,19 +128,19 @@ Analysis includes:
 
 ## Executive Overview
 
-![Dashboard 1](assets/dashboard1.png)
+![Dashboard 1](04_power_bi/dashboard_1_activity_overview.png)
 
 ---
 
 ## User Behavior Analysis
 
-![Dashboard 2](assets/dashboard2.png)
+![Dashboard 2](04_power_bi/dashboard_2_sleep_wellness_treands.png)
 
 ---
 
 ## Marketing Insights
 
-![Dashboard 3](assets/dashboard3.png)
+![Dashboard 3](04_power_bi/dashboard_3_trends_marketing.png)
 
 ---
 
@@ -185,43 +185,66 @@ Bellabeat-Fitness-Tracker-Analysis/
 │── README.md
 │── LICENSE
 │── requirements.txt
+│── .gitignore
 
 ├── 01_data
 │   ├── sample_data
+│   │   ├── daily_activities.csv
+│   │   ├── heart_rate.csv
+│   │   ├── hourly_intensities.csv
+│   │   ├── hourly_steps.csv
+│   │   ├── sleep_data.csv
+│   │   └── weight_log.csv
+│   │
 │   ├── DATA_SOURCE.md
-│   ├── data_dictionary.md
-│   └── dataset_license.md
-
+│   └── data_dictionary.md
+│
 ├── 02_sql
-│   ├── 00_dataset_setup.sql
-│   ├── ...
-│   └── 09_export_tables.sql
-
+│   ├── sql_queries
+│   │   ├── 00_dataset_setup.sql
+│   │   ├── 01_clean_daily_activity.sql
+│   │   ├── 02_clean_sleep_data.sql
+│   │   ├── 03_clean_hourly_steps.sql
+│   │   ├── 04_clean_hourly_intensities.sql
+│   │   ├── 05_clean_weight_log.sql
+│   │   ├── 06_clean_heart_rate.sql
+│   │   ├── 07_master_user_activity.sql
+│   │   ├── 08_analysis_queries.sql
+│   │   └── 09_export_tables.sql
+│   │
+│   ├── Bellabeat_SQL_Analysis_queries.docx
+│   └── Bellabeat_SQL_Analysis_queries.pdf
+│
 ├── 03_python
+│   ├── visuals
+│   │   ├── correlation_analysis.png
+│   │   ├── dashboard_export_charts.png
+│   │   ├── distribution_plots.png
+│   │   ├── heart_rate_analysis.png
+│   │   ├── sleep_analysis.png
+│   │   ├── user_segmentation.png
+│   │   └── weekly_trends.png
+│   │
+│   ├── Bellabeat_Colab_Python_Analysis.docx
+│   ├── Bellabeat_Colab_Python_Analysis.pdf
 │   ├── bellabeat_analysis.ipynb
-│   ├── bellabeat_analysis.py
-│   └── charts/
-
+│   └── bellabeat_analysis.py
+│
 ├── 04_power_bi
 │   ├── Bellabeat_Fitness_Analysis.pbix
-│   ├── Dashboard_1.png
-│   ├── Dashboard_2.png
-│   ├── Dashboard_3.png
+│   ├── dashboard_1_activity_overview.png
+│   ├── dashboard_2_sleep_wellness_trends.png
+│   ├── dashboard_3_trends_marketing_insights.png
 │   └── power_bi_publish_link.md
-
-├── 05_docs
-│   ├── case_study_report.pdf
-│   ├── case_study_brief.pdf
+│
+├── 05_presentation
+│   ├── Bellabeat_Case_Study_Report.docx
+│   ├── Bellabeat_Case_Study_Report.pdf
+│   ├── case_study_brief.docx
+│   ├── case_study_brief_Readme.md
 │   ├── key_findings.md
-│   └── presentation.pdf
-
-└── assets
-    ├── workflow.png
-    ├── dashboard1.png
-    ├── dashboard2.png
-    └── dashboard3.png
+│   └── workflow.png
 ```
-
 ---
 
 # 📈 Power BI Dashboard
