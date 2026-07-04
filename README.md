@@ -1,4 +1,4 @@
-# 💖 Bellabeat Fitness Tracker Analysis
+# 💓 Bellabeat Fitness Tracker Analysis
 
 **End-to-end analytics case study** — turning 33 users' worth of FitBit tracker data into product and marketing recommendations for Bellabeat, a high-tech wellness company for women.
 
